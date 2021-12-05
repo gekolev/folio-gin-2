@@ -1,5 +1,31 @@
 .full-size {
-  background-color: blue;
+  background-color: lightblue;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  // position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2vw;
+}
+.name-and-title {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    margin-bottom: 0px;
+  }
+  align-self: flex-end;
+}
+
+.hero-anim {
+  align-self: flex-end;
+}
+.placeholder {
+  width: 350px;
+  height: 350px;
+  background-color: gray;
+  border-radius: 50%;
 }
