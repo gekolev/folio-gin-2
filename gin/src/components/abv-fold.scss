@@ -13,9 +13,11 @@
 .name-and-title {
   h1 {
     font-size: 80px;
+    font-family: General Sans Light, sans-serif;
   }
   h2 {
-    margin-bottom: 0px;
+    margin-bottom: 21px;
+    font-family: General Sans Regular, sans-serif;
   }
   align-self: flex-end;
 }
@@ -28,4 +30,36 @@
   height: 350px;
   background-color: gray;
   border-radius: 50%;
+}
+//circle animation vanilla
+.circle {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  opacity: 0;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  animation: animate 7.5s linear infinite;
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  span {
+    position: absolute;
+    top: -100px;
+    display: inline-block;
+    transform-origin: 0 100px;
+  }
 }

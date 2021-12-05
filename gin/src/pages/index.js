@@ -1,17 +1,23 @@
 import * as React from "react"
 import { gsap } from "gsap"
-import { Link } from "gatsby"
+import { withPrefix, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import AboveFold from "../components/AboveFold"
 import Body from "../components/Body"
+import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <div className="page-wrap">
+    <Helmet>
+      <script src={withPrefix("script.js")} type="text/javascript" />
+    </Helmet>
     <AboveFold />
     <Body />
+    <Footer />
   </div>
   // <Layout>
   //   <Seo title="Home" />

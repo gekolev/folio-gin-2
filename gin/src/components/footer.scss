@@ -1,0 +1,12 @@
+.footer-holder {
+  margin-top: 4vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    div {
+      cursor: pointer;
+    }
+  }
+}
