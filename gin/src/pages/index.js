@@ -13,7 +13,7 @@ import Footer from "../components/Footer"
 const IndexPage = () => (
   <div className="page-wrap">
     <Helmet>
-      <script src={withPrefix("script.js")} type="text/javascript" />
+      {/* <script src={withPrefix("script.js")} type="text/javascript" /> */}
     </Helmet>
     <AboveFold />
     <Body />
